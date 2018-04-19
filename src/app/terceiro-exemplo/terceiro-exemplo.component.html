@@ -1,11 +1,11 @@
 <div class="col-md-4">
   <div class="jumbotron">
-    <h1 class="display-4">Segundo exemplo</h1>
-    <p class="lead">Ng Model e ngModelChance</p>
+    <h1 class="display-4">Terceiro exemplo</h1>
+    <p class="lead">Two Way Binding</p>
     <hr class="my-4">
-    <label for="sobrenome"> Qual o seu sobrenome</label>
-    <input [ngModel]="sobrenome" (ngModelChange)="sobrenome = $event" class="form-control form-control-lg" type="text" id="sobrenome">
-    <p> Meu sobrenome é {{ sobrenome }}</p>
+    <label for="idade"> Qual a sua idade</label>
+    <input [(ngModel)] = "idade" class="form-control form-control-lg" type="text" id="idade">
+    <p> Minha idade é {{ idade }}</p>
     <input class="form-control form-control-lg" type="text">
     <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
     <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>

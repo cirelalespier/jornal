@@ -6,9 +6,11 @@ import { FormsModule } from '@angular/forms'
 import { AppComponent } from './app.component';
 import { TopoComponent } from './topo/topo.component';
 import { RodapeComponent } from './rodape/rodape.component';
-import { NoticiaComponent } from './noticia/noticia.component';
+
 import { PrimeiroExemploComponent } from './primeiro-exemplo/primeiro-exemplo.component';
 import { SegundoExemploComponent } from './segundo-exemplo/segundo-exemplo.component';
+import { TerceiroExemploComponent } from './terceiro-exemplo/terceiro-exemplo.component';
+import { NoticiaModule } from './noticia/noticia.module';
 
 
 @NgModule({
@@ -16,13 +18,15 @@ import { SegundoExemploComponent } from './segundo-exemplo/segundo-exemplo.compo
     AppComponent,
     TopoComponent,
     RodapeComponent,
-    NoticiaComponent,
+    
     PrimeiroExemploComponent,
-    SegundoExemploComponent
+    SegundoExemploComponent,
+    TerceiroExemploComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    NoticiaModule
   ],
   providers: [],
   bootstrap: [AppComponent]
